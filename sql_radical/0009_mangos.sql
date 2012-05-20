@@ -3,7 +3,7 @@
 SET NAMES UTF8;
 
 UPDATE `creature_template` SET `name` = 'Angel', `subname` = '', `minhealth` = '26500', `maxhealth` = '26500', `minlevel` = '80', `maxlevel` = '80', `npcflag` = '2', `modelid_1` = '5233' WHERE `entry` = 22852;
-UPDATE `locales_creature` SET `name_loc6` = '√Ångel' WHERE `entry` = 22852;
+UPDATE `locales_creature` SET `name_loc6` = '√ngel' WHERE `entry` = 22852;
 UPDATE `locales_creature` SET `name_loc7` = `name_loc6` WHERE `entry` = 22852;
 
 DELETE FROM `creature_involvedrelation` WHERE `id` = 22852;

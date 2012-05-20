@@ -58,13 +58,12 @@ UPDATE `creature_questrelation` SET `id` = '26423' WHERE `quest` = 12238;
 
 DELETE FROM `creature` WHERE `id` = 26423;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`)
-VALUES
-	(119623, 26423, 571, 1, 1, 0, 0, 3846.28, -1973.05, 208.338, 2.57302, 600, 0, 0, 6986, 0, 0, 0),
-	(null, 26423, 571, 1, 1, 0, 0, 3380.82, -1805.59, 114.167, 4.87473, 25, 5, 0, 6986, 0, 0, 0),
-	(null, 26423, 571, 1, 1, 0, 0, 4232.9, -2049.91, 241.894, 1.5073, 25, 5, 0, 6986, 0, 0, 0),
-	(null, 26423, 571, 1, 1, 0, 0, 4528.12, -3468.75, 226.932, 4.13917, 25, 5, 0, 6986, 0, 0, 0),
-	(null, 26423, 571, 1, 1, 0, 0, 4601.96, -4877.87, 48.0635, 1.35257, 25, 5, 0, 6986, 0, 0, 0),
-    (null, 28016, 600, 2, 1, 0, 0, -242.646, -615.483, 116.481, 4.70175, 25, 5, 0, 6986, 0, 0, 0);
+VALUES (119623, 26423, 571, 1, 1, 0, 0, 3846.28, -1973.05, 208.338, 2.57302, 600, 0, 0, 6986, 0, 0, 0),
+(null, 26423, 571, 1, 1, 0, 0, 3380.82, -1805.59, 114.167, 4.87473, 25, 5, 0, 6986, 0, 0, 0),
+(null, 26423, 571, 1, 1, 0, 0, 4232.9, -2049.91, 241.894, 1.5073, 25, 5, 0, 6986, 0, 0, 0),
+(null, 26423, 571, 1, 1, 0, 0, 4528.12, -3468.75, 226.932, 4.13917, 25, 5, 0, 6986, 0, 0, 0),
+(null, 26423, 571, 1, 1, 0, 0, 4601.96, -4877.87, 48.0635, 1.35257, 25, 5, 0, 6986, 0, 0, 0),
+(null, 28016, 600, 2, 1, 0, 0, -242.646, -615.483, 116.481, 4.70175, 25, 5, 0, 6986, 0, 0, 0);
 
 UPDATE `creature_template` SET `faction_A` = '14', `faction_H` = '14' WHERE `entry` = 27727;
 UPDATE `creature_template` SET `faction_A` = '35', `faction_H` = '35', `npcflag` = '1' WHERE `entry` = 26405;
@@ -163,28 +162,23 @@ UPDATE `quest_template` SET `SpecialFlags` = '1', `ReqCreatureOrGOId1` = '24786'
 
 DELETE FROM `gossip_menu_option` WHERE `menu_id` = 8898;
 INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`, `option_id`, `npc_option_npcflag`, `action_menu_id`, `action_poi_id`, `action_script_id`, `box_coded`, `box_money`, `box_text`, `cond_1`, `cond_1_val_1`, `cond_1_val_2`, `cond_2`, `cond_2_val_1`, `cond_2_val_2`, `cond_3`, `cond_3_val_1`, `cond_3_val_2`)
-VALUES
-	(8898, 0, 0, 'I need an emblem.', 1, 1, -1, 0, 50385, 0, 0, NULL, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+VALUES (8898, 0, 0, 'I need an emblem.', 1, 1, -1, 0, 50385, 0, 0, NULL, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 
 DELETE FROM `gossip_scripts` WHERE `id` = 50385;	
 INSERT INTO `gossip_scripts` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `datalong4`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`)
-VALUES
-	(50385, 0, 17, 33340, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '');
+VALUES (50385, 0, 17, 33340, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '');
 
 DELETE FROM `locales_gossip_menu_option` WHERE `menu_id` = 8898;
 INSERT INTO `locales_gossip_menu_option` (`menu_id`, `id`, `option_text_loc1`, `option_text_loc2`, `option_text_loc3`, `option_text_loc4`, `option_text_loc5`, `option_text_loc6`, `option_text_loc7`, `option_text_loc8`, `box_text_loc1`, `box_text_loc2`, `box_text_loc3`, `box_text_loc4`, `box_text_loc5`, `box_text_loc6`, `box_text_loc7`, `box_text_loc8`)
-VALUES
-	(8898, 0, NULL, NULL, NULL, NULL, NULL, 'Necesito un emblema.', 'Necesito un emblema.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+VALUES (8898, 0, NULL, NULL, NULL, NULL, NULL, 'Necesito un emblema.', 'Necesito un emblema.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 DELETE FROM `gameobject` WHERE `id` = 185562;
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`)
-VALUES
-	(null, 185562, 530, 1, 1, 3277.94, 4635.75, 216.449, 2.15767, 0, 0, 0.881408, 0.472356, 300, 255, 1);
+VALUES (null, 185562, 530, 1, 1, 3277.94, 4635.75, 216.449, 2.15767, 0, 0, 0.881408, 0.472356, 300, 255, 1);
 
 DELETE FROM `creature` WHERE `id` = 22911;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`)
-VALUES
-	(null, 22911, 530, 1, 1, 0, 0, 3279.96, 4640.08, 216.528, 2.21579, 300, 5, 0, 97800, 7196, 0, 0);
+VALUES (null, 22911, 530, 1, 1, 0, 0, 3279.96, 4640.08, 216.528, 2.21579, 300, 5, 0, 97800, 7196, 0, 0);
 
 UPDATE `quest_template` SET `SpecialFlags` = '0', `ReqCreatureOrGOId1` = '185890', `ReqCreatureOrGOCount1` = '4' WHERE `entry` = 11058; 
 
