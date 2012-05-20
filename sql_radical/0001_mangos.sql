@@ -1,11 +1,11 @@
 -- ZONA INICIO DK
--- AÃ±adido NPC Salanar para poder entregar la quest 12687
+-- Añadido NPC Salanar para poder entregar la quest 12687
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`)
 VALUES
 	(null, 28788, 609, 1, 32, 0, 0, 2352.66, -5702.3, 153.923, 2.45982, 25, 5, 0, 26140, 0, 0, 0);
 
--- Teleport Sagrario RubÃ­ (.tele elsagrariorubi)
+-- Teleport Sagrario Rubí (.tele elsagrariorubi)
 
 DELETE FROM `game_tele` WHERE `name` = 'ElSagrarioRubi';
 INSERT INTO `game_tele` (`id`, `position_x`, `position_y`, `position_z`, `orientation`, `map`, `name`)
@@ -60,7 +60,7 @@ UPDATE `creature_template` SET `unit_flags` = '536903680' WHERE `entry` = 28942;
 
 UPDATE `creature` SET `position_z` = '164' WHERE `guid` = 116835;
 
--- Jaina pasiva para que no te ataque en la quest La BendiciÃ³n del Jefe de Guerra (13189)
+-- Jaina pasiva para que no te ataque en la quest La Bendición del Jefe de Guerra (13189)
 
 UPDATE `creature_template` SET `npcflag` = '0', `unit_flags` = '768' WHERE `entry` = 32364;
 

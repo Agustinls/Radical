@@ -22,4 +22,4 @@ VALUES (
 );
 
 
-UPDATE `ytdb`.`spell_proc_event` SET `Cooldown` = '45' WHERE `spell_proc_event`.`entry` =72419;
+UPDATE `spell_proc_event` SET `Cooldown` = '45' WHERE `spell_proc_event`.`entry` =72419;
